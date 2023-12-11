@@ -4,11 +4,23 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
     transition: 1s;
 }
 
 html {
     overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    background-color: #FBFBEB;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #355070;
+    border-radius: 30%;
 }
 
 .overlay {
@@ -140,63 +152,10 @@ html {
         margin-left: 20px;
     }
 }
-@media (max-width:600px) {
-    .info h1{
-        font-size: 2.2rem;
-        margin-top: 270px;
-        margin-bottom: 20px;
-    }
-    
-    .info H3 {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-    }
-    
-    .info p {
-        font-size: 1.3rem;
-        font-weight: 500;
-        margin-bottom: 40px;
-    }
-    
-    .container button {
-        padding: 10px 20px;
-        border: 2px solid #fff;
-        border-radius: 5px;
-        background: transparent;
-        color: #fff;
-        font-size: 1.1rem;
-    }
-    .head nav .menu-links a {
-        display: block;
-        font-size: .8rem;
-        padding: 22px 20px;
-        text-decoration: none;
-        color: #355070;
-        border-bottom: 1px solid grey;
-        background-color: lavenderblush;
-        
-    }
-}
 
 @media (max-width:400px) {
-    .head nav .menu-links a {
-        display: block;
-        font-size: .7rem;
-        padding: 22px 20px;
-        text-decoration: none;
-        color: #355070;
-        border-bottom: 1px solid grey;
-        background-color: lavenderblush;
-        
-    }
-    .info h1{
-        font-size: 2.2rem;
-        margin-top: 200px;
-        margin-bottom: 20px;
-    }
+
 }
-
-
 
 
 /* section 1  */
@@ -204,7 +163,7 @@ html {
 .home {
     height: 100vh;
     width: 100vw;
-    background-image: url(nice.jpg);
+    background-image: url(nice_521043371.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -367,19 +326,20 @@ html {
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:850px) {
     .info h1{
-        font-size: 3rem;
-        margin-top: 200px;
+        font-size: 2.2rem;
+        margin-top: 270px;
         margin-bottom: 20px;
     }
     
     .info H3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-bottom: 20px;
     }
     
     .info p {
+        font-size: 1.3rem;
         font-weight: 500;
         margin-bottom: 40px;
     }
@@ -390,24 +350,24 @@ html {
         border-radius: 5px;
         background: transparent;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width:600px) {
     .info h1{
-        font-size: 2rem;
-        margin-top: 200px;
+        font-size: 2.2rem;
+        margin-top: 270px;
         margin-bottom: 20px;
     }
     
     .info H3 {
-        font-size: .8rem;
+        font-size: 1.1rem;
         margin-bottom: 20px;
     }
     
     .info p {
-        font-size: .8rem;
+        font-size: 1.3rem;
         font-weight: 500;
         margin-bottom: 40px;
     }
@@ -418,7 +378,35 @@ html {
         border-radius: 5px;
         background: transparent;
         color: #fff;
+        font-size: 1.1rem;
+    }
+    .head nav .menu-links a {
+        display: block;
         font-size: .8rem;
+        padding: 22px 20px;
+        text-decoration: none;
+        color: #355070;
+        border-bottom: 1px solid grey;
+        background-color: lavenderblush;
+        
+    }
+}
+
+@media (max-width:400px) {
+    .head nav .menu-links a {
+        display: block;
+        font-size: .7rem;
+        padding: 22px 20px;
+        text-decoration: none;
+        color: #355070;
+        border-bottom: 1px solid grey;
+        background-color: lavenderblush;
+        
+    }
+    .info h1{
+        font-size: 2.2rem;
+        margin-top: 200px;
+        margin-bottom: 20px;
     }
 }
 
@@ -462,6 +450,8 @@ html {
     height: 300px;
     gap: 20px;
     width: 70%;
+    box-shadow: 3px 3px 7px;
+
 }
 
 .about-me .container1 {
@@ -578,8 +568,29 @@ html {
     color: #fff;
 }
 
-@media (max-width:800px) {
-
+@media (max-width:850px) {
+    .stats {
+        padding: 20px;
+        margin: 35px;
+        display: flex;
+        flex-direction: column;
+        height: 580px;
+        gap: 20px;
+        width: 70%;
+        text-align: center;
+    }
+    .container1 {
+        margin: 0 auto;
+        padding: 0 auto;
+        width: 80%;
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+   
 }
 
 @media (max-width:600px) {
@@ -612,10 +623,28 @@ html {
     }
     .leftside img {
         height: 130px;
-        width: 240px;
+        width: 200px;
     }
     .about-me .info1 h1{
         margin-top: 50px;
+        font-size: 1rem;
+    }
+    .about-me .info1 p{
+        margin-top: .5rem;
+        max-width: 90%;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:400px) {
+    .leftside img {
+        height: 130px;
+        width: 190px;
+    }
+    .about-me .info1 h1{
+        margin-top: 30px;
+        margin-bottom: 10px;
         font-size: 1rem;
     }
     .about-me .info1 p{
@@ -698,11 +727,11 @@ html {
 
 }
 
-@media (max-width:800px) {
+@media (max-width:850px) {
 
 }
 
-@media (max-width:800px) {
+@media (max-width:600px) {
    .serve {
     display: flex;
     flex-direction: column;
@@ -723,6 +752,12 @@ html {
     }
     .services {
         height: contain;
+    }
+}
+
+@media (max-width:400px) {
+    .container2 {
+        height: 180vh;
     }
 }
 
@@ -766,6 +801,7 @@ html {
     height: 150px;
     width: 150px;
     border-radius: 8px;
+    box-shadow: 3px 3px 7px;
 }
 
 .container3 ul li {
@@ -802,7 +838,7 @@ html {
     transition: 1S;
 }
 
-@media (max-width:800px) {
+@media (max-width:850px) {
     
 }
 
@@ -817,6 +853,12 @@ html {
     }
     .container3 {
         height: 120vh;
+    }
+}
+
+@media (max-width:400px) {
+    .container3 {
+        height: 160vh;
     }
 }
 
@@ -1033,14 +1075,34 @@ swiper-container {
     background-color: #355070;
   }
 
-  @media (max-width:800px) {
-
+  @media (max-width:850px) {
+    .close {
+        flex-direction: column;
+    }
   }
 
   @media (max-width:600px) {
     .close {
         flex-direction: column;
     }
+  }
+
+  @media (max-width:400px) {
+
+    .last {
+        height: 190vh;
+      }
+    
+      .lcontainer {
+        height: 180vh;
+      }
+      .close span {
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    
+    
   }
 
 
