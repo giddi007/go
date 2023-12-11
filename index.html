@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="project.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="overlay">
@@ -82,15 +83,15 @@
 
     <section id="about" class="about-me">
         <div class="container1 ">
-            <div class="info1">
+            <div class="info1 flex2">
                 <h1>ABOUT ME</h1>
                 <div class="under"></div>
-                <P>This section is a simple representeion of learn progress and  level of archivement in HTML CSS and JAVASCRIPT. Thank you for folowing through</P>
+                <P >This section is a simple representeion of learn progress and  level of archivement in HTML CSS and JAVASCRIPT. Thank you for folowing through</P>
             </div>
 
-            <div class="stats">
-                <div class="leftside"> 
-                    <img src="obiora.jpg" alt="">
+            <div class="stats" >
+                <div class="leftside" > 
+                    <img src="obiora.jpg" alt="" data-aos="zoom-in">
                 </div>
 
                 <div class="load">
@@ -150,22 +151,22 @@
             </div>
 
             <div class="serve">
-                <div class="compa card" >
+                <div data-aos="fade-right" class="compa card" >
                     <i class="fa-solid fa-leaf box"></i>
                     <h2>FRONT END DEVELOPMENT</h2>
                     <P>We bring to live your desired design on your website.</P>
                 </div>
-                <div class="compa card">
+                <div data-aos="fade-left" class="compa card">
                     <i class="fa-solid fa-desktop box"></i>
                     <H2>BACK END DEVELOPMENT</H2>
                     <p>We also handle very the parts which you dont interect with.</p>
                 </div>
-                <div class="compa card">
+                <div data-aos="fade-right" class="compa card">
                     <i class="fa-solid fa-pen-fancy"></i>
                     <H2>INOVATIVE MIND</H2>
                     <p>as we know variety is the spice of life, we always have dynamic ideas to suite you.</p>
                 </div> 
-                <div class="compa card">
+                <div data-aos="fade-left" class="compa card">
                     <i class="fa-brands fa-angrycreative box"></i>
                     <H2>UI/UX</H2>
                     <p>we also have creative minds that conjure mind blowing user interface designs.</p>
@@ -193,37 +194,53 @@
 
                 <div class="gallery-cont grid3">
                     <div class="gallery flex3 wc frontend" >
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="design.jpg " alt="">
                         </div>
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="computer2.jpg" alt="">
                         </div>
                         
                     </div>
                     <div class="gallery flex3 wc2 backend">
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="lapi 1.jpg" alt="">
                         </div>
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="typing.jpg" alt="">
                         </div>
                        
                     </div>
                     <div class="gallery flex3 wc3 ui/ux">
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="uiui2.avif" alt="">
                         </div>
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="computer.jpg" alt="">
                         </div>
                        
                     </div>
                     <div class="gallery flex3 wc3 innovative">
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="uiux.png.avif" alt="">
                         </div>
-                        <div>
+                        <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                             <img src="group.jpg" alt="">
                         </div>
                        
@@ -316,15 +333,11 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        var overlay = document.querySelector(".overlay")
-        window.addEventListener("load", () => {
-           overlay.style.display = "none";
-        })
-    </script>
+        AOS.init();
+      </script>
     <script src="script.js"></script>
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
         const progressCircle = document.querySelector(".autoplay-progress svg");
