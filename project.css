@@ -190,7 +190,7 @@ body::-webkit-scrollbar-thumb {
 
 .info h1{
     font-size: 3rem;
-    margin-top: 200px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -329,7 +329,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width:850px) {
     .info h1{
         font-size: 2.2rem;
-        margin-top: 270px;
+        margin-top: 40px;
         margin-bottom: 20px;
     }
     
@@ -357,7 +357,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width:600px) {
     .info h1{
         font-size: 2.2rem;
-        margin-top: 270px;
+        margin-top: 40px;
         margin-bottom: 20px;
     }
     
@@ -405,7 +405,7 @@ body::-webkit-scrollbar-thumb {
     }
     .info h1{
         font-size: 2.2rem;
-        margin-top: 200px;
+        margin-top: 30px;
         margin-bottom: 20px;
     }
 }
@@ -419,6 +419,7 @@ body::-webkit-scrollbar-thumb {
     width: 100vw;
     background-color:#c9c9bc ;
     position: relative;
+    padding: 50px 0;
 }
 
  .container1 {
@@ -432,8 +433,13 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
-.about-me .info1 h1{
-    margin-top: 90px;
+.under {
+    margin: 20px 0;
+}
+
+.about-me .info1 p{
+    margin-bottom: 20px;
+    padding: 20px 0;
 }
 
  .info1 {
@@ -443,11 +449,11 @@ body::-webkit-scrollbar-thumb {
 
 .stats {
     background-color: #e88c7d;
-    padding: 20px;
-    margin: 35px;
+    padding: 20px ;
+    /* margin: 35px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 300px;
+    height: fit-content;
     gap: 20px;
     width: 70%;
     box-shadow: 3px 3px 7px;
@@ -574,7 +580,7 @@ body::-webkit-scrollbar-thumb {
         margin: 35px;
         display: flex;
         flex-direction: column;
-        height: 580px;
+        height: fit-content;
         gap: 20px;
         width: 70%;
         text-align: center;
@@ -662,24 +668,24 @@ body::-webkit-scrollbar-thumb {
 /* section 3 */
 
 .services {
-    height: contain;
+    height: fit-content;
     width: 100vw;
     background-color:#fbfbeb ;
+    padding: 50px 0;
 }
 
 .container2 {
     max-width: 1100px;
-    height: 130vh;
+    height: fit-content;
     margin: 0 auto;
     overflow: auto;
-    padding: 0 px;
     width: 100%;
     position: relative;
     text-align: center;
 }
 
 .services .info2 h3 {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 10px;
 }
 
@@ -715,7 +721,7 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 50px;
-    height: 200px;
+    height: fit-content;
 }
 
 .services .serve i {
@@ -728,7 +734,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width:850px) {
-
+    .container2 {
+        height: fit-content;
+    }
+    .serve {
+        height: fit-content;
+    }
+    .services {
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width:600px) {
@@ -736,7 +750,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    height: 250px;
+    height: fit-content;
     margin-bottom: 20px;
     }
     .services .info2 h3 {
@@ -744,20 +758,24 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 10px;
     }
     .container2 {
-        height: 150vh;
+        height: fit-content;
     }
     
     .services .info2 p {
         margin-bottom: 30px;
     }
-    .services {
-        height: contain;
-    }
+  
 }
 
 @media (max-width:400px) {
     .container2 {
-        height: 180vh;
+        height: fit-content;
+    }
+    .serve {
+        height: fit-content;
+    }
+    .card {
+        width: 280px;
     }
 }
 
@@ -768,33 +786,42 @@ body::-webkit-scrollbar-thumb {
 /* section 4  */
 
 .portfolio {
-    height: contain;
+    height: fit-content;
     width: 100vw;
     background-color:#c9c9bc ;
+    padding: 50px 0;
 }
 
 .container3 {
     max-width: 1100px;
-    height: 100vh;
+    height: fit-content;
     margin: 0 auto;
     overflow: auto;
-    padding: 0;
     width: 100%;
     position: relative;
     text-align: center;
 }
 
+
+
 .portfolio .container3 .info3 .links{
     margin-bottom: 40px;
 }
 
+.fit {
+    height: fit-content;
+}
+
 .info3 h3 {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 20px;
 }
 
 .info3 .under {
     margin-bottom: 20px;
+}
+.grid3 {
+    height: fit-content;
 }
 
 .gallery-cont .gallery img {
@@ -838,27 +865,69 @@ body::-webkit-scrollbar-thumb {
     transition: 1S;
 }
 
+.gallery-cont {
+    height: fit-content;
+}
+
+
 @media (max-width:850px) {
-    
+    .container3 {
+        height: fit-content;
+    }
+   
+    .fit {
+        height: fit-content;
+    }
+    .gallery-cont {
+        height: fit-content;
+    }
+    .fit2 {
+        height: fit-content;
+    }
+    .fit3 {
+        height: fit-content;
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width:600px) {
     .gallery-cont {
         display: flex;
         flex-direction: column;
+        height: fit-content;
     }
     .pcs{
         display: flex;
         flex-direction: column;
     }
     .container3 {
-        height: 120vh;
+        height: fit-content;
+    }
+    .portfolio {
+        height: fit-content;
+    }
+    .info3 {
+        height: fit-content;
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:450px) {
     .container3 {
-        height: 160vh;
+        height: fit-content;
+    }
+   
+    .fit {
+        height: fit-content;
+    }
+    .gallery-cont {
+        height: fit-content;
+    }
+    .fit2 {
+        height: fit-content;
+    }
+    .fit3 {
+        height: fit-content;
+        padding-bottom: 50px;
     }
 }
 
@@ -978,19 +1047,19 @@ swiper-container {
     }
   }
   
-
   /* last side  */
 
   .last {
-    height: contain;
+    height: fit-content;
     width: 100vw;
     background-color:#fbfbeb ;
     text-align: center;
+    padding: 50px 0;
   }
 
   .lcontainer {
     max-width: 1100px;
-    height: 150vh;
+    height: fit-content;
     margin: 0 auto;
     overflow: auto;
     padding: 0 px;
@@ -1000,7 +1069,7 @@ swiper-container {
   }
 
   .lcontainer .info5 h3 {
-    margin-top: 70px;
+    /* margin-top: 70px; */
     margin-bottom: 10px;
   }
 
@@ -1092,7 +1161,6 @@ swiper-container {
     .last {
         height: 190vh;
       }
-    
       .lcontainer {
         height: 180vh;
       }
