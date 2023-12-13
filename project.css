@@ -1109,10 +1109,17 @@ swiper-container {
 
   .inputt input[type=text],
   .inputt input[type=email]  {
+    border: none;
     width:92%;
-    border: 1px solid #355070;
+    border-bottom: 1px solid #355070;
+    background-color: transparent;
     border-radius: 5px;
     padding: 13px;
+  }
+
+  .inputt input[type=text],
+  .inputt input[type=email]:focus {
+    outline: none;
   }
 
   ::placeholder {
@@ -1125,9 +1132,17 @@ swiper-container {
 
   textarea {
     width:92%;
-    border: 1px solid #355070;
+    border: none;
+    border-bottom: 1px solid #355070;
     border-radius: 5px;
+    background-color: transparent;
     padding: 13px;
+    min-width: 92%;
+    max-width: 92%;
+  }
+
+  textarea:focus {
+    outline: none;
   }
 
   .inputt button {
